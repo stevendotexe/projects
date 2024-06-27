@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="header.css" rel="stylesheet">
+    <title>Search</title>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="index.html">Search</a></li>
+            <li><a href="advanced-search.html" class="selected">Advanced Search</a></li>
+            <li><a href="image-search.html">Image Search</a></li>
+        </ul>
+    </header>
+
+    <main>
+
+        <div class="title">
+            <strong>Google Advanced Search</strong>
+        </div>
+        
+        <form action="https://www.google.com/search" class="advanced-search-form">
+            Find pages with...<br><br>
+
+            <div class="search-item">
+            <p class="directions">all these words:</p>
+            <input type="text" name="as_q" class="advanced-search-input">
+            <p>Type the important words: <code>tri-color rat terrier</code></p>
+            </div>
+
+            <div class="search-item">
+            <p class="directions">this exact word or phrase: </p>
+            <input type="text" name="as_epq" class="advanced-search-input">
+            <p>Put exact words in quotes: <code>"rat terrier"</code></p>
+            </div>
+            
+            <div class="search-item">
+            <p class="directions">any of these words: </p>
+            <input type="text" name="as_oq" class="advanced-search-input">
+            <p>Type "<code>OR</code>" between the words you want: <code>miniature OR standard</code></p>
+            </div>
+
+            <div class="search-item">
+            <p class="directions">none of these words: </p>
+            <input type="text" name="as_eq" class="advanced-search-input">
+            <p>Put a minus sign just before words that you don't want: <code>-rodent</code>, <code>-"Jack Russel"</code></p>
+            </div>
+
+            <div class="search-item">
+            <p class="directions">numbers ranging from: </p>
+            <input type="text" name="as_nlo" class="input-range" >
+            <p>to</p>
+            <input type="text" name="as_nhi" class="input-range">
+            <p>Put two full stops between the numbers and add a unit of measurement: <br><code>10..35 kg, £300..£500, 2010..2011
+            </code></p>
+            </div>
+            
+            <input type="submit" class="advanced-submit">
+
+        </form>
+
+    </main>
+
+</body>
+</html>

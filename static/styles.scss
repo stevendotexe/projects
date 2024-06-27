@@ -1,0 +1,73 @@
+$background-color: rgba(27, 27, 27, 1.0);
+$card-background: rgb(47, 47, 47);
+$outline: rgb(95, 95, 95);
+$text-color: rgba(239, 239, 239);
+$font: 'Poppins';
+
+body {
+    background-color: $background-color;
+    margin: 0;
+    color: $text-color;
+    font-family: Poppins, sans-serif;
+}
+nav {
+    border-bottom: 1px solid $outline;
+    border-radius: 0 0 30px 30px;
+    display: flex;
+    justify-content: flex-start;
+    height: 70px;
+    padding: 1rem 1rem 1rem 3rem;
+    img {
+        width: auto;
+    }
+    p{
+        margin: 0;
+        font-size: 30px;
+    }
+    hr{
+        margin: 5px 15px 15px 15px;
+        height: 30px;
+        border: 1.5px solid white;
+    }
+}
+@media (max-width: 800px) {
+    nav{
+        justify-content: center;
+        padding: 1rem;
+        p{
+            font-size: 26px;
+        }
+    }
+}
+
+a {
+    text-decoration: none;
+
+    &:hover, &:focus {
+        text-decoration: none; // Removes the blue underline
+    }
+
+    .card-title, .card-text {
+        color: white;
+    }
+
+    .card:hover, .card:focus {
+        outline: none;
+    }
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    margin-top: 50px;
+    justify-content: center;
+    .card{
+        background-color: $card-background;
+        border-radius: 30px;
+        border: none;
+        img{
+            border-radius: 30px;
+        }
+    }
+}

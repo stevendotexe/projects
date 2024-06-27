@@ -1,0 +1,67 @@
+body {
+  background-color: rgb(27, 27, 27);
+  margin: 0;
+  color: rgb(239, 239, 239);
+  font-family: Poppins, sans-serif;
+}
+
+nav {
+  border-bottom: 1px solid rgb(95, 95, 95);
+  border-radius: 0 0 30px 30px;
+  display: flex;
+  justify-content: flex-start;
+  height: 70px;
+  padding: 1rem 1rem 1rem 3rem;
+}
+nav img {
+  width: auto;
+}
+nav p {
+  margin: 0;
+  font-size: 30px;
+}
+nav hr {
+  margin: 5px 15px 15px 15px;
+  height: 30px;
+  border: 1.5px solid white;
+}
+
+@media (max-width: 800px) {
+  nav {
+    justify-content: center;
+    padding: 1rem;
+  }
+  nav p {
+    font-size: 26px;
+  }
+}
+a {
+  text-decoration: none;
+}
+a:hover, a:focus {
+  text-decoration: none;
+}
+a .card-title, a .card-text {
+  color: white;
+}
+a .card:hover, a .card:focus {
+  outline: none;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  margin-top: 50px;
+  justify-content: center;
+}
+main .card {
+  background-color: rgb(47, 47, 47);
+  border-radius: 30px;
+  border: none;
+}
+main .card img {
+  border-radius: 30px;
+}
+
+/*# sourceMappingURL=styles.css.map */

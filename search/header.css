@@ -1,0 +1,14 @@
+header{
+    background-color: rgb(19, 19, 19);
+    border-radius: 0 0 15px 15px;
+}
+
+header ul{
+    color: white;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    justify-content: center;
+    font-size: 2vh;
+}
